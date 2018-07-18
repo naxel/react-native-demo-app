@@ -9,9 +9,6 @@ import {
 import ListWithAnimations from './ListWithAnimations';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
   navItemWrapper: {
     width: 50,
     height: 50,

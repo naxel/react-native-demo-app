@@ -8,10 +8,6 @@ import {
 import ListWithAnimations from './ListWithAnimations';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#62ea80',
-  },
   navItemWrapper: {
     width: 10,
     height: 50,
