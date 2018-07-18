@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "rules": {
+    "arrow-parens": "off",
+    "padded-blocks": "off",
+    "object-curly-newline": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-array-index-key": "off"
+  },
+  "globals": {
+    "describe": true,
+    "it": true,
+    "fetch": true
+  }
+}
