@@ -6,6 +6,7 @@ import {
   Animated,
   Easing,
   Button,
+  Dimensions,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -24,11 +25,11 @@ const styles = StyleSheet.create({
   },
   label: {
     textAlign: 'center',
-    color: 'darkblue',
+    color: 'rgba(0,0,0,0.5)',
   },
 });
 
-export default class example extends React.Component {
+export default class Easings extends React.Component {
 
   constructor(props) {
     super(props);
@@ -49,7 +50,7 @@ export default class example extends React.Component {
     Animated.timing(
       this.animValue1,
       {
-        toValue: 250,
+        toValue: Dimensions.get('window').width - 80,
         duration: 2000,
         easing: Easing.ease,
       },
@@ -57,7 +58,7 @@ export default class example extends React.Component {
     Animated.timing(
       this.animValue2,
       {
-        toValue: 250,
+        toValue: Dimensions.get('window').width - 80,
         duration: 2000,
         easing: Easing.elastic(2),
       },
@@ -65,7 +66,7 @@ export default class example extends React.Component {
     Animated.timing(
       this.animValue3,
       {
-        toValue: 250,
+        toValue: Dimensions.get('window').width - 80,
         duration: 2000,
         easing: Easing.inOut(Easing.quad),
       },
@@ -73,7 +74,7 @@ export default class example extends React.Component {
     Animated.timing(
       this.animValue4,
       {
-        toValue: 250,
+        toValue: Dimensions.get('window').width - 80,
         duration: 2000,
         easing: Easing.bounce,
       },
@@ -81,7 +82,7 @@ export default class example extends React.Component {
     Animated.timing(
       this.animValue5,
       {
-        toValue: 250,
+        toValue: Dimensions.get('window').width - 80,
         duration: 2000,
         easing: Easing.linear,
       },
@@ -121,7 +122,7 @@ export default class example extends React.Component {
           <Text style={styles.label}>linear</Text>
         </Animated.View>
 
-        <Button onPress={() => this.onPress()} title="Press me" />
+        <Button onPress={() => this.onPress()} title="PRESS ME" />
       </View>
     );
   }

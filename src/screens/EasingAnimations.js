@@ -1,16 +1,11 @@
 import React from 'react';
-import { View, Button, ScrollView, StyleSheet } from 'react-native';
-import PropTypes from 'prop-types';
+import { ScrollView, StyleSheet } from 'react-native';
 import Easings from '../components/effects/Easings';
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: 40,
-  },
   list: {
-    marginTop: 30,
-    marginLeft: 5,
+    marginTop: 10,
+    marginLeft: 10,
   },
 });
 
@@ -21,20 +16,10 @@ export default class EasingAnimations extends React.Component {
   };
 
   render() {
-    const { navigation } = this.props;
     return (
-      <View style={styles.container}>
-        <Button onPress={navigation.openDrawer} title="Menu" />
-        <ScrollView>
-          <View style={styles.list}>
-            <Easings />
-          </View>
-        </ScrollView>
-      </View>
+      <ScrollView style={styles.list}>
+        <Easings />
+      </ScrollView>
     );
   }
 }
-
-EasingAnimations.propTypes = {
-  navigation: PropTypes.instanceOf(Object).isRequired,
-};
